@@ -12,8 +12,8 @@ The Databricks cluster configuration in JSON is
     "cluster_name": "twitter_this (clone)",
     "spark_version": "9.1.x-scala2.12",
     "spark_conf": {
-        "spark.mongodb.write.connection.uri": "mongodb://cs4225-output:SdSslZkQQxRWmSIlEZaVcNIRU6pBPAwHB6yTmINgsIP4CIJ1j8IEFieCDM6k13vzhiAB0WCjvzVJvLc4I1HcaA==@cs4225-output.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cs4225-output@",
-        "spark.mongodb.read.connection.uri": "mongodb://cs4225-output:SdSslZkQQxRWmSIlEZaVcNIRU6pBPAwHB6yTmINgsIP4CIJ1j8IEFieCDM6k13vzhiAB0WCjvzVJvLc4I1HcaA==@cs4225-output.mongo.cosmos.azure.com:10255/?ssl=true&readPreference=primaryPreferred&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cs4225-output@",
+        "spark.mongodb.write.connection.uri": "mongodb://127.0.0.1/test.myCollection?readPreference=primaryPreferred",
+        "spark.mongodb.read.connection.uri": "mongodb://127.0.0.1/test.myCollection",
         "spark.databricks.delta.preview.enabled": "true",
         "spark.kryoserializer.buffer.max": "2000M",
         "spark.serializer": "org.apache.spark.serializer.KryoSerializer",
